@@ -1,0 +1,53 @@
+<div class="client-form-wrapper" mt-3>
+  <h2 *ngIf="!editMode">Dodaj klienta : </h2>
+  <form [formGroup]="clientForm" (ngSubmit)="transferData()">
+    <div>
+      <mat-form-field>
+        <mat-label>Imie</mat-label>
+        <input matInput type="text" [formControl]="clientForm.controls.firstname">
+        <mat-error *ngIf="controls.firstname.invalid">{{getErrorMessage(controls.firstname)}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Nazwisko</mat-label>
+        <input matInput type="text" [formControl]="clientForm.controls.surname">
+        <mat-error *ngIf="controls.surname.invalid">{{getErrorMessage(controls.surname)}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>email</mat-label>
+        <input matInput type="text" [formControl]="clientForm.controls.email">
+        <mat-error *ngIf="controls.email.invalid">{{getErrorMessage(controls.email)}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+<!--      <mat-form-field>-->
+<!--        <mat-label>nr telefonu</mat-label>-->
+<!--        <input matInput type="number" [formControl]="clientForm.controls.phone">-->
+<!--        <mat-error *ngIf="controls.phone.invalid">{{getErrorMessage(controls.phone)}}</mat-error>-->
+<!--      </mat-form-field>-->
+      <app-phone-control [formControl]="clientForm.controls.phone" ></app-phone-control>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>adres</mat-label>
+        <input matInput type="text" [formControl]="clientForm.controls.address">
+        <mat-error *ngIf="controls.address.invalid">{{getErrorMessage(controls.address)}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Kod pocztowy</mat-label>
+        <input matInput type="text" [formControl]="clientForm.controls.postcode">
+        <mat-error *ngIf="controls.postcode.invalid">{{getErrorMessage(controls.postcode)}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button *ngIf="editMode" mat-raised-button color="warn" type="button" (click)="emitCloseDialog()">Anuluj</button>
+      <button color="primary" class="mx-1" mat-raised-button type="submit">{{editMode ? 'Edytuj klienta' : 'Dodaj nowego klienta'}}</button>
+    </div>
+    <app-alert *ngIf="errorMessage" [text]="errorMessage"></app-alert>
+  </form>
+</div>

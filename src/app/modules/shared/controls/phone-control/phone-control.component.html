@@ -1,0 +1,10 @@
+<mat-form-field class="prefix">
+  <mat-label>Kierunkowy</mat-label>
+  <input matInput [formControl]="prefixControl">
+  <mat-error *ngIf="prefixControl.errors">{{getErrorMessage(prefixControl)}}</mat-error>
+</mat-form-field>
+<mat-form-field class="phoneNumber">
+  <mat-label>nr telefonu</mat-label>
+  <input matInput [formControl]="phoneNumberControl">
+  <mat-error *ngIf="phoneNumberControl.errors">{{getErrorMessage(phoneNumberControl)}}</mat-error>
+</mat-form-field>

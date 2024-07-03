@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.pl",
+      "password": "qwe123",
+      "username": "test"
+    },
+    {
+      "email": "12345@test.pl",
+      "username": "12345",
+      "password": "qwe123",
+      "id": 2
+    },
+    {
+      "email": "test123@test.pl",
+      "username": "test123",
+      "password": "qwe123",
+      "id": 3
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "firstname": "Test1",
+      "surname": "Testowy1",
+      "email": "test1@gmail.com",
+      "phone": "123456",
+      "address": "Miasto, ul. Testowa 12",
+      "postcode": "111-11"
+    },
+    {
+      "id": 2,
+      "firstname": "Test2",
+      "surname": "Testowy2",
+      "email": "test2@gmail.com",
+      "phone": "123456",
+      "address": "Miasto, ul. Testowa 12",
+      "postcode": "111-11"
+    },
+    {
+      "id": 3,
+      "firstname": "Test3",
+      "surname": "Testowy3",
+      "email": "test3@gmail.com",
+      "phone": "123456",
+      "address": "Miasto, ul. Testowa 12",
+      "postcode": "111-11"
+    },
+    {
+      "id": 4,
+      "firstname": "Test4",
+      "surname": "Testowy4",
+      "email": "tes4t@gmail.com",
+      "phone": "123456",
+      "address": "Miasto, ul. Testowa 12",
+      "postcode": "111-11"
+    },
+    {
+      "firstname": "Blablablaa",
+      "surname": "Testowy433",
+      "email": "tes4t@gmail.com",
+      "phone": "123456",
+      "address": "Miasto, ul. Testowa 12",
+      "postcode": "111-11",
+      "id": 5
+    },
+    {
+      "firstname": "feafa",
+      "surname": "feafafa",
+      "email": "efaefa@waea.pl",
+      "phone": "321321312",
+      "address": "weqwe we qe qew",
+      "postcode": "21 321",
+      "id": 6
+    },
+    {
+      "firstname": "Basia",
+      "surname": "Ketopron",
+      "email": "ket@gmail.com",
+      "phone": "+48123124321",
+      "address": "ul. Testowa",
+      "postcode": "11-111",
+      "id": 7
+    }
+  ]
+}
